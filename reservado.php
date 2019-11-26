@@ -4,7 +4,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
 
     $idUsuario = $_POST['idUsuario'];
 
-    require_once 'connect.php';
+    require_once 'connect.php'; 
 
     $sql = "SELECT pu.titulo, au.nomeAutor, re.data_devolucao
 FROM publicacao pu
